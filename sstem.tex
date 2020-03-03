@@ -1,0 +1,309 @@
+\documentclass[12pt]{article}
+
+%2. Proposal Margin and Spacing Requirements
+%
+%The proposal must conform to the following requirements:
+%
+%a. Use one of the following typefaces identified below:
+%
+%    Computer Modern family of fonts at a font size of 11 points or larger.
+%
+%A font size of less than 10 points may be used for mathematical formulas or equations, figures, table or diagram captions and when using a Symbol font to insert Greek letters or special characters. PIs are cautioned, however, that the text must still be readable.
+%
+%b. No more than six lines of text within a vertical space of one inch.
+%
+%c. Margins, in all directions, must be at least an inch.
+%
+%These requirements apply to all uploaded sections of a proposal, including supplementary documentation.
+
+%\pagestyle{headings}
+\usepackage{sidecap}
+\usepackage{setspace}
+\singlespacing
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{amsbsy}
+\usepackage{amssymb}% Include extra symbols: \gtrsim and \lesssim
+\usepackage{fancyhdr}
+\usepackage{shading}
+\usepackage{wrapfig}
+\usepackage{xspace}
+\bibliographystyle{aasjournal}
+%\usepackage{mathpazo,bm}
+\usepackage{mathpazo}
+\usepackage{natbib}
+\usepackage{deluxetable}
+\usepackage{mdwlist}
+\usepackage{url}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{multicol,multirow}
+\usepackage[normalem]{ulem}
+%\usepackage{bibtex}
+%\usepackage{mathabx}
+\usepackage{esint}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.55in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.6in}
+
+\newlength{\hfwidth}
+\newlength{\hfwidthsingle}
+\addtolength{\hfwidthsingle}{.5\textwidth} %single fig in figure
+\addtolength{\hfwidth}{.497\textwidth} %single fig in figure*
+
+%avoid figures from occupying the whole page
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.85}
+\newcommand{\msun}{M$_{\odot}$}
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+%\newcommand{\note}[1]{[$\triangleright\triangleright$~\textbf{#1}~$\triangleleft\triangleleft$]}
+\newcommand{\resheading}[1]{{\flushleft{\parashade[.8]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+  \textbf{#1} & #2 \\
+  \textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+\newcommand{\shadebox}[1]{\textshade[grayscale]{sharpcorners}}
+\newcommand\new[1]{{\color{blue}#1}}
+\newcommand\reword[1]{{\color{red}#1}}
+
+\def\apj{\rm ApJ}
+\def\apjl{\rm ApJL}
+\def\apjs{\rm ApJS}
+\def\aj{\rm AJ}
+\def\mnras{\rm MNRAS}
+\def\araa{\rm ARAA}
+\def\nat{\rm Nature}
+\def\pasj{\rm PASJ}
+\def\pasp{\rm PASP}
+\def\aap{\rm A\&A}
+
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\makeatletter
+\def\@to{to}
+\makeatother
+
+\thispagestyle{empty}
+\begin{document}
+
+
+\section{Project Objectives and Plans}
+%%% NSF Text:  %%%
+% The project should have specific objectives that reflect the goals of the S-STEM program and local needs, as well as specific plans to select students, encourage them to achieve their best academic performance, and enable them to enter the workforce or continue studies in their fields. The project also should have specific plans to implement and investigate existing high quality evidence-based practices and professional and workforce development activities (e.g., academic and student support activities) and to contribute to the knowledge base about what works for whom in college retention, student success, and graduation (to include transfer, if appropriate) in STEM.
+
+\noindent
+{\bf Overview}\\
+Students from traditionally underrepresented backgrounds often struggle when transitioning from one academic environment to the next.  %They often do not follow a  ``traditional'' pathway from high school $\rightarrow$ college $\rightarrow$ graduate school, but take a more circuitous route.  
+As a result, retaining such students in STEM fields is challenging, as these students may be 
+%re-entering school after time off, or 
+dealing with additional circumstances that affect their time commitment and focus.  This proposal addresses these transitions for CUNY community college students (the majority of whom fit within at least one underrepresented demographic) with structures specifically tailored to support and retain them.
+ %as they traverse the academic maze.  
+ {\bf We will implement a community college physics pathway to aid those working toward four-year schools and beyond.}  Students will participate in mentoring, advising, community involvement, and research experiences.  Physics is an excellent gateway into STEM fields because of the awe it inspires (um...), and with the introduction of technical skills and increased scientific abilities, participating students can be expected to experience higher rates of retention and success.  {\bf Our objective is for  75\% of participating students to achieve a further degree (B.S. or B.A.) in a STEM field, with 50\%  in physics and/or  astronomy.} % Important to say where the numbers come from.  (based on Fisk-Vanderbilt success, I expect blah blah).  
+%\vspace{-2mm}
+
+
+The retention of students in science, technology, engineering and mathematics (STEM) fields has been a challenge.  69\% of community college students who enter STEM fields leave them, either by changing majors or dropping out of college altogether \citep{NCES}.  While Black and Hispanic students are well represented in STEM college major choices, many of these students do not graduate with STEM degrees \citep{Ma15}.  The problem persists at higher levels of education as well; the fraction of science PhDs awarded to African American, Latino, and other minority students is far smaller than the fraction these minorities constitute in the general population \citep{NSF06,Ivie18}.   Similarly, gender imbalances also exist in most science fields: women are underrepresented at the graduate student and faculty levels \citep{NSF04,Ivie18}, and continue to be lost at every educational transition \citep{NAP}. 	Transitions are particularly difficult for marginalized students, who may deal with racism, sexism, ableism, income disparities, and other discriminatory challenges in addition to academic ones.  In this proposal we target the key transition points of community college to four-year university with the aim of increasing the retention and success of marginalized students in physics, astronomy, and other STEM fields.   
+
+
+%Underrepresented minority (URM) students and women of all backgrounds drop out of STEM fields at a higher rate than their male/majority peers.   (no ref for this)
+
+
+%[Community college STEM stats go here, find some to justify my argument]    \\
+% 69\% of CC students who enter STEM fields leave them, either by changing majors or dropping out of college altogether.  (dept of education statistical analysis report NCES 2014-001)
+
+%Prior literature indicates that URM students seem to benefit most from intervention 
+%programs that promote academic confidence, like undergraduate research programs, because 
+%their experiences within math and science course can lead them to doubt their academic ability in 
+%these subjects (Perna et al., 2009) and their decisions to remain in a STEM major (Crisp et al, 
+%2009).   (from Herrera & Hurtado)
+
+%\vspace{-4mm}
+
+% this paragraph is good but change for physics
+The field of astronomy (oops, and physics! reword)is an ideal gateway to STEM success.  Students (and the public) are attracted to astronomy because of its ability to inspire and amaze.  In addition to inspiration, however, engaging in astronomy research provides students with many tools, such as data analysis and visualization, software engineering, computation, statistics, and technical communication.  Thus, students with a background in astronomy research are equipped to segue into a plethora of related STEM fields.
+	
+{\bf The objective of this proposal is to increase the number of traditionally underrepresented people in STEM fields by providing opportunities and support in research, community, and mentorship.} Mentoring relationships are essential to students who continue in STEM fields past their first year \citep{reureport,Nagda,Wilson}, and research experiences are particularly effective in giving underrepresented students the confidence and enthusiasm for taking advanced courses and learning difficult material \citep{armstrong03}.  These initiatives will implement many of the best practices for retaining underrepresented students:  building a sense of community; providing advising, mentoring, and academic support; and engaging students in discipline--specific research \citep{jordan,holland}. 	
+
+\section{Significance of Project and Rationale}
+% %%% NSF Text:  %%%
+% A proposal must state and justify with institutional data the annual and total number of unique students who will be awarded scholarships over the duration of the award period, the number of scholarships awarded annually, the total number of scholarships awarded for the award period, the duration of the scholarship, and the annual and maximum amount of the scholarship for a scholarship recipient.
+
+%The proposal should address how the goals of the S-STEM program will be met (see Program Description, Section II). In addition, if appropriate, it should include information on the demographics of the departments or programs affected by the scholarships, including number of majors and number of graduates per year, as well as information on overall enrollment and retention within the institution and programs involved.
+
+%A rationale for the number of scholarships and the scholarship amount requested should also be provided. Specifically, baseline data from Institutional Research Offices should include (1) current student demographics and enrollment from institutions awarding scholarships; (2) current student demographics and enrollment for each S-STEM eligible discipline that is included in the proposed project and the projected number of low-income students that meet the eligibility requirements in those disciplines; (3) current 1-year retention rates for each S-STEM eligible discipline that is included in the proposal; and (4) current graduation rates for each S-STEM eligible discipline that is included in the proposal. This baseline data will also be useful for project evaluation. It may be helpful to consult with the financial aid office at the institution to determine typical financial need for the proposed cohort of students (or for some larger group of students if information on the smaller cohort is not easily available). While there is flexibility within a project budget after a grant is made, the size of the budget request must be closely related in the proposal to a realistic estimate of student need.
+
+%For S-STEM eligible disciplines included in the proposal, expected outcomes should include, at a minimum: expected demographics and enrollment for the disciplines that are included in the proposal showing the current number of low-income students that would qualify for the scholarships; expected year to year retention or transfer rates for S-STEM eligible disciplines for the eligible student population that are included in the proposal; expected graduation rates for each of the S-STEM disciplines included in the proposal and/or expected student outcomes documenting students successfully overcoming one or more of an institution’s self-identified attrition points.
+	
+Community colleges often host large numbers of minority students, and Queensborough Community College (QCC) is no exception.  Out of the 15,000 enrolled QCC students, 30\% are Hispanic/Latinx, 29\% are Asian, 25\% are African American, and 15\% are Caucasian.  34\% of QCC students speak a language other than English at home, and over 50\% come from a family with an income below \$25,000 per year \citep{QCCweb} The QCC student body is an ideal pool of students to target for the Physics Major Pathway program.
+
+Much more required info to add here.
+% no URLs in document
+
+
+%  QCC info:  http://www.qcc.cuny.edu/about/fast-facts.html
+% more than 50% of students come from a family with income below $25,000 
+% from 127 nations speaking 78 native languages
+%  25% AfAm, 30% hispanic, 29% asian, 15% caucasian
+%  more than 20% are immigrants, and 34% speak not-English at home
+
+
+%\subsection{Physics at QCC}
+QCC students are not well-informed about the career opportunities and skills a physics major can provide.  Those interested in technical fields often gravitate towards engineering, due to the seemingly straightforward career path and high earning capabilities.  The students who {\em do} follow a physics major trajectory often receive erroneous advice on course registration, resulting in the unnecessary repetition of coursework.  These students often stumble as they traverse the academic maze, unless they are fortunate enough to find a faculty mentor who can guide them.
+
+We propose to address these issues and create a comprehensive, formalized trajectory for physics majors at QCC, including:
+\vspace{-2mm}
+
+% make the order more logical
+% consider reducing to categories and making sub-points (to make it seem less ambitious)
+\begin{itemize}
+\setlength{\itemsep}{-\parsep}
+\setlength{\topsep}{-\parsep}
+\setlength{\partopsep}{-\parsep}
+	\item connect students to research opportunities within the QCC Physics department \& elsewhere
+	\item design brochures for advisors and professors to hand out to interested students
+	\item create a portion of the department website dedicated to physics major requirements, activities and opportunities
+	\item facilitate seminars and panels on career options, networking, applying to internships, etc.
+%	\item offer financial support for select students
+	\item build a sense of community among physics majors 
+	\item design and implement an Associate's Degree (A.S.) in Physics
+\end{itemize}	
+	
+We will create a monthly seminar series for physics majors to promote student success and build community.  This series will include relevant topics such as applying for internships, getting research experience, and writing a CV.  QCC students lack this guidance, and a solidified communication channel will greatly increase their success.
+
+
+\section{Activities on Which the Current Project Builds}
+%%% NSF Text: %%%
+% S-STEM projects should build on the research literature and existing academic and student supports and program elements. Proposals should discuss such academic and student supports and program elements that are relevant to the S-STEM project and describe ways in which the S-STEM project will use or enhance the structures. Proposals should describe and justify the adaptation of academic and student supports and program elements implemented for S-STEM Scholars and other STEM students. If the institution or a member of a consortium of institutions has had a previous S-STEM and/or STEP award, show how the proposed project will build on lessons learned from these efforts.
+
+%S-STEM projects should draw on the research literature and discuss the issues or gaps in the literature that the project plans to address.
+
+Research experiences have been shown to increase the retention of underrepresented minority students in STEM fields \citep{Graham,Russell}.  Providing such experience will enable students to gain skills and network, and aid them as they continue their studies.  Several QCC Physics faculty have active research groups (e.g., professors Armendariz, Damas, Dehipawala, Marchese, Reigel, and Bellovary), and all faculty are encouraged to engage students in research projects.  There will be a plethora of projects available for students in the program, with a range of physics subfields.  %I will support my colleagues who mentor students with summer salary funding, as outlined in my budget justification.
+Students will prepare for research projects by taking the Physics 450 course ``Introduction to Physics Research'' during their first year in the program.   Topics for this course include scientific reading and writing, keeping a lab notebook, designing an experiment, writing a literature review, analyzing data, basic data visualization, and presentation skills.  In the second half of this course, students will work on individual or group research projects with the goal of writing a literature review and attempting basic data analysis.  For example, a student could use python to measure the density profile of a simulated dwarf galaxy, and determine whether it has a cusp or a core.  By the end of the course, students will have the rudimentary skills to leap into research.
+
+\section{S-STEM Project Management Plan}
+%%% NSF Text  %%
+% S-STEM projects must be guided by a management plan in which the key personnel and project logistics are defined. The roles and responsibilities of the personnel involved should be clear.
+
+%For all projects the project leadership team must include a faculty member currently teaching in an S-STEM eligible discipline as listed in Section IV.B, a STEM administrator, and an institutional, educational, or social science researcher.
+
+%The project must involve S-STEM faculty, as mentors, in addition to the PI, and it is strongly encouraged that the project involve staff from offices of institutional research, student services, financial aid, and/or admissions. These additional personnel may be included as Co-PIs, depending on institutional policy. In any case, the proposal must describe specific roles of each person in the project. The PI will have overall responsibility for administering the project and for interacting with NSF.
+
+%Plans must be described for activities such as recruitment, selection, and retention of students; studies to determine the effectiveness of project activities; maintenance of S-STEM records; coordination of data collection, analysis, and reporting responsibilities; oversight of student supports; and implementation of a process by which students who lose S-STEM eligibility will be replaced by new students.
+
+Financial support is critical for community college students, who are often low-income and working at least one job in addition to taking classes.  Giving students the freedom to focus on coursework is the best support we can give.  We propose to offer XX stipends per year to qualified students who engage in research projects within our groups.  To maximize retention of the participating students after they leave QCC, we will continue their financial support for two subsequent years, presuming they transfer to a 4-year institution and continue to pursue a physics or astronomy major.  Transfers to other CUNY physics departments will be absorbed into the existing network of CUNYAstro (change!) mentors, who are located at the majority of CUNY 4-year institutions.  Regardless of the transfer institution, we will establish a relationship with a local mentor to facilitate tracking each students' progress.  This local mentor will aid with advising and course selection, as well as complete a check-in phone call with me at the beginning and end of each semester.  We will manage the matriculated students by requesting transcripts at the beginning and end of each term to verify their majors and good standing.  We will also check in with each student via phone or Skype each semester to maintain our mentoring relationship, discuss their progress, and consider future opportunities.  Based on the advisor report, transcripts, and check-in, we will authorize continuation of the student stipend through the next semester.  Student stipends will be managed by the QCC Office of Grants and Sponsored Programs, following standard CUNY procedures (see Budget Justification for more details).
+
+QCC students participating in the Physics Pathways program will receive a stipend as they undergo their research training. Students will be supported for 2 years at QCC, and then for two subsequent years at the four-year institute they transfer to (or until the grant ends, whichever comes first). Two students per year will enter the program, for a total of 10 students over five years. Students will be supported for a maximum of four years, regardless of their graduation status at the end of that time. Student support will only be awarded for full-time students who remain in a physics, astronomy, or other STEM field. Students will receive \$6,000 per year as they attend QCC, and \$7,500 per year after they transfer to a four-year institution. The total amount in undergraduate student fellowships is \$183,000.  {\bf change!!!}
+
+
+QCC has implemented procedures to ensure that a student who participates in a stipend/fellowship program meets all eligibility requirements of the grant.  No student can be accepted to participate in a grant-funded stipend/fellowship program until OGSP has reviewed his or her application to confirm that he or she meets all the requirements of the grant.  OGSP will collect and maintain on file from the PI the students' transcript, advisor report, and forms required by the Research Foundation of CUNY to process the stipend.  Depending on grant requirements, these may include the QCC Student Eligibility Criteria Form, RFCUNY Data Collection Form, RFCUNY Direct Deposit Authorization form, QCC Student Release of Financial Aid Information.  
+ 
+Once processed through OGSP and RFCUNY, fellowship payments will be mailed directly from the RFCUNY to the students.  The PI will agree on a payment schedule with the student which will be described in the fellowship award letter which both parties will sign.  The letter from the PI will outline expectations of the student, fellowship requirements, and the period of time covered by the fellowship. 
+
+
+\section{Student Selection Process and Criteria}
+% The program requires that the students meet the requirements for citizenship, discipline, academic potential, and need that are outlined in Section IV.B, Additional Eligibility Information, Scholarship Recipients. Projects should have additional selection criteria that reflect the local program. S-STEM scholarship recipients must be able to demonstrate their eligibility in each semester or quarter of S-STEM support.
+
+%The selection process for scholarship recipients should include indicators of academic merit and other indicators of likely professional success. Multiple indicators may be appropriate in gauging both academic merit (e.g., grade point average, placement test results) and professionalism (e.g., motivation, ability to manage time and resources, communication skills).
+
+%Selection criteria must be flexible enough to accommodate applicants who come from diverse backgrounds (e.g., geographic and with diverse career goals). The program encourages projects to recruit a diverse applicant pool that is inclusive of, but not limited to, members of underrepresented groups in STEM (e.g., females, African Americans, Hispanic Americans, Native Americans, including Alaska Natives and Native Pacific Islanders, persons with disabilities, first generation, rural, veterans), with the broad aim of supporting low-income academically talented students with demonstrated financial need to obtain degrees and enter into the STEM workforce or graduate studies.
+
+%The proposal should indicate how students' eligibility will be determined, the mechanisms by which scholarships for students will be provided, and how scholarship program outcomes will be evaluated and disseminated. It should also identify criteria for retention of students' scholarships from one year to the next.
+%These students will be selected by an application process, and will be evaluated on a combination of academic merit and ability to persevere through challenging obstacles.  We will interview potential students and develop a rubric to select and evaluate them.  
+
+
+\section{S-STEM Student Support Services and Programs}
+%  It is expected that awardee institutions will have or will adapt existing high-quality evidence-based practices (e.g., curricular and co-curricular activities; professional, and workforce development activities) designed to enhance student learning, academic performance, retention to graduation, and career or higher education placement. Awardee institutions will implement and test these practices to understand if they are working as expected, if they are successful, and for what types of students.
+
+%Experience indicates that the most successful S-STEM projects involve faculty mentoring and a group of students who in some way naturally associate, whether as majors in the same department, or sharing classes, or participating together in activities of common interest. Thus, in this model, two of the program requirements are that all S-STEM scholarship recipients have STEM faculty mentors and are placed in student cohorts. Other examples of student support activities to consider include:
+
+%    Recruitment of students to higher education programs and careers in the S-STEM eligible disciplines;
+ %   Curricular activities such as the inclusion of active learning in gateway courses;
+ %   Support and mentoring of students by peers and other professionals;
+ %   Academic support services such as tutoring, study-groups, or supplemental instruction programs;
+ %   Industry experiences, internship opportunities, and research opportunities;
+  %  Community building and support among S-STEM scholars within the institution;
+%    Participation in local or regional professional, industrial or scientific meetings and conferences; and
+ %   Career counseling and job placement services for S-STEM scholarship recipients.
+
+%For support services and programs that already exist, describe how they will be adapted to meet the specific objectives of the S-STEM project. Partnerships with industry are encouraged.
+
+emphasize community building
+
+\section{Quality Educational Programs}
+%  Institutions should provide evidence of the quality of their educational programs, particularly those in the targeted disciplines. Where appropriate, cite external accreditations in the S-STEM disciplines (for example, ABET for engineering).
+
+What do we write here?
+
+\section{Generation of Knowledge}
+%  All projects should advance understanding about the factors and/or activities associated with retention, student success, transfer, academic/career pathways, and degree attainment. Knowledge generation should be based on the information needs of the institution; draw on the research literature on evidence-based practices, student success, and degree attainment; state questions that guide the investigations; and describe how the questions will be answered.
+
+also here?
+
+\section{Evaluation}
+% S-STEM projects should include a clear and specific project evaluation plan. The evaluation should include formative evaluation for project improvement in the first two years of implementation to allow for any necessary corrective action and summative evaluation to assess and document project outcomes, accomplishments, and lessons learned at the end of the project. Beyond the impact on students, S-STEM projects should collect data to ascertain impact on the departments, disciplines involved, and the institution. Each S-STEM proposal should describe evaluation plans that are clearly aligned with the stated goals of the project. The evaluation design should match the scope of the project.
+
+%The evaluator must be external to the project, but not necessarily to the institution. The evaluator should not be a Co-PI or senior personnel on the project.
+
+%S-STEM projects are required to participate in regular NSF-led data collection activities to follow student progress.
+
+We will perform a quantitative assessment of this program by tracking the progress of students as they matriculate to four-year institutions and beyond. Specifically, {\bf our goal is for 75\% of participating students to achieve a B.S. in a STEM field, with 50\% in physics and/or astronomy}. We will track the number of students who present their research at the annual QCC Research Day, how many transfer to a STEM major at a four-year college, and how many graduate with a STEM degree.  Along the way, we will also undertake a more qualitative assessment, consisting of surveys and interviews of participating students and faculty mentors.  We shall continually seek to improve the selection process, seminar series, research course, and research experience for all involved.
+
+\section{Dissemination}
+%  The results of successful projects will be of potential interest to other faculty, staff, students, other stakeholders, and the community of which the institution is a part, as well as to student services and financial aid professionals and others who operate scholarship programs. The proposal should include a plan to report on the project and its successes and lessons learned to appropriate audiences.
+
+Once implemented, this model will be ideal for expansion into a department-wide program.  
+The Physics Pathways program will then become a full department-wide, and potentially CUNY-wide, endeavor.
+
+While this proposed model is tailored to QCC, it can easily be exported to other community colleges.  After the first four(?) years, we will create a how-to document and advertise it to other QCC departments as well as nearby colleges, including those in CUNY and SUNY.  The proliferation of this program to other departments and institutions is expected to greatly increase the retention of STEM majors during this critical moment in their careers.
+
+
+
+
+% unnecessary!  
+\section{Intellectual Merit}
+
+The students involved in our program will be trained in computer programming, data analysis and visualization, scientific writing, and presentation.  They will not only gain these skills, but also the confidence and ability to innovate in STEM fields.  
+
+\section{Broader Impacts}
+
+Our education plan will involve approximately XX students (XX per year at QCC over YY years) who will conduct scientific research.   The students targeted in our program will mainly be from underrepresented backgrounds; we will select students from the diverse QCC and general CUNY student population who show ``grit'' and the ability to persevere through challenges.  Such students traditionally have lower retention rates in STEM but can be successful when given the proper support.  These students will realize their full potential when they receive these career-building opportunities, making them candidates for future STEM success.  The export of our Physics Pathways program to other colleges will expand the retention of students within other disciplines and at other institutions, further increasing and diversifying our national STEM workforce.   An additional result of our efforts will be the building of a network of equity/inclusion-minded people within the CUNY system and the broader STEM community.
+
+
+
+%This program will expand our national STEM workforce, and its eventual  expansion to other community colleges will multiply that number manyfold.
+
+%\begin{figure}
+%\begin{centering}
+%\includegraphics[width=4in]{plots/timeline.pdf}
+%\caption{Timeline of proposed work. \label{fig:timeline}}
+%\vspace{-4mm}
+%\end{centering}
+%\end{figure}
+
+
+\vspace{-5mm}
+\section{Results of Prior NSF Support}
+\vspace{-3mm}
+Bellovary is Co-PI on the NSF AAG grant 1812642 "Collaborative Research: Of Mice and Monsters -- Investigating the Growth of Black Holes in Dwarf Galaxies" (9/1/2018 - 8/31/2021)  {\em Intellectual Merit:}  Bellovary serves in a co-advisory role to a Rutgers PhD student (formally advised by Alyson Brooks), whose thesis focuses on black holes in dwarf galaxies in the Romulus simulation.  Our first paper, in which we examine the properties of galaxies which host MBHs which are outliers in the standard scaling relations, was submitted during fall 2019.  {\em Broader Impacts:}  Bellovary is mentoring three community college REU students who are working on observational signatures of wandering black holes in dwarf galaxies.
+
+QCC REU mention, Kim is on that one.
+
+There is the S-STEM with Binghampton, do we mention?
+
+\newpage
+\bibliography{refs}
+
+\end{document}
+
+
+
+
